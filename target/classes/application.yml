@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://java-app-db-server.database.windows.net:1433;database=java-app-db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: azuredbadmin
+    password: Azure@1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9091
